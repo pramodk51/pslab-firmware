@@ -47,12 +47,13 @@ extern "C" {
     
 typedef struct {
      
-    BYTE     Type;            // Card type (detected by SD_Init())
-    BYTE     CSD[16];         // SD card CSD register (card structure data)
-	BYTE     CID[16];         // SD card CID register (card identification number)
-	BYTE     SCR1[8];         // SD card SCR register (SD card configuration)   
-        
+    BYTE     Type;             // Card type (detected by SD_Init())
+    BYTE     CSD[16];          // SD card CSD register (card structure data)
+    BYTE     CID[16];          // SD card CID register (card identification number)
+    BYTE     SCR1[8];          // SD card SCR register (SD card configuration)   
+    unsigned long LAST_SECTOR; //last sector in sd card
 } SDCardType;
+    
     
 /* Results of SD functions */
 typedef enum {
