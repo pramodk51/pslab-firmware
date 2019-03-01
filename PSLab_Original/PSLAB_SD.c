@@ -4,7 +4,7 @@
 #include "COMMANDS.h"
 #include "PSLAB_SD.h"
 
-//modified this function from (http://nerdclub-uk.blogspot.com/2012/11/how-spi-works-with-sd-card.html)
+
 void SendCommand(BYTE cmd, unsigned long arg) {
 
      BYTE send_arr[6]; 
